@@ -1,10 +1,9 @@
 <?php
 
 declare(strict_types=1);
-
-use Illuminate\Support\Facades\Schema;
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
