@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\Schema;
 namespace App\Providers;
 
 use Illuminate\Database\Eloquent\Model;
@@ -23,6 +24,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+		Schema::defaultStringLength(191);
         Vite::prefetch(concurrency: 3);
 
         Model::shouldBeStrict();
